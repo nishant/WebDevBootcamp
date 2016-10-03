@@ -8,26 +8,30 @@
     <h1>Register</h1>
 
     <form method="post">
-      <label for="firstName">First Name: </label>
-      <input id="firstName" type="text" name="firstName" placeholder="John" required>
-      <label for="lastName">Last Name: </label>
-      <input id="lastName" type="text" name="lastName" placeholder="Smith" required>
-      <br>
+      <div>
+        <label for="firstName">First Name: </label>
+        <input id="firstName" type="text" name="firstName" placeholder="John" required>
+        <label for="lastName">Last Name: </label>
+        <input id="lastName" type="text" name="lastName" placeholder="Smith" required>
+      </div>
 
-      <label for="gender">Male </label>
-      <input id="gender" type="radio" name="gender" value="male">
-      <label for="gender">Female </label>
-      <input id="gender" type="radio" name="gender" value="female">
-      <label for="gender">Other </label>
-      <input id="gender" type="radio" name="gender" value="other">
-      <br>
+      <div>
+        <label for="gender">Male </label>
+        <input id="gender" type="radio" name="gender" value="male">
+        <label for="gender">Female </label>
+        <input id="gender" type="radio" name="gender" value="female">
+        <label for="gender">Other </label>
+        <input id="gender" type="radio" name="gender" value="other">
+      </div>
 
+    <div>
       <label for="email">Email: </label>
       <input id="email" type="email" name="email" placeholder="your email" required>
       <label for="password">Password: </label>
       <input id="password "type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters only">
-      <br>
+    </div>
 
+    <div>
       <label for="bday">Birthday: </label>
       <select name="month">
         <option value="January">Jan</option>
@@ -41,11 +45,11 @@
         <option value="1997">1997</option>
         <option value="1998">1998</option>
       </select>
-      <br>
-
+    </div>
+    <div>
       <label for="terms">I agree to the terms and conditions</label>
       <input type="checkbox" name="agree" value="yes">
-      <br>
+    </div>
 
       <input type="submit">
     </form>
